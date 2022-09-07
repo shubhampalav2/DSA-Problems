@@ -4,11 +4,12 @@ class Solution {
         // code here
        int ans=0;
        while(N!=0){
+       int bit=n&1;
        //If number is odd then the bit is 1
-       if(N%2!=0){
+       if(bit==1){
        ans+=1;
        }
-       N=N/2;
+       N=N>>2;
        }
        return ans;
     }
